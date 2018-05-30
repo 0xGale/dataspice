@@ -45,9 +45,10 @@ remotes::install_github("ropenscilabs/dataspice")
 ## Workflow
 
 ```{r example, eval=FALSE}
-create_spice()
-write_spice() 
-build_site()
+create_spice() # Copy empty metadata templates into your repo
+# Edit the templates in data/metadata
+write_spice() # Writes out JSON-LD to data/metadata
+build_site() # Create a static site in docs
 ```
 
 ![worfklowdiagram](man/figures/dataspice_workflow.png)
@@ -137,7 +138,6 @@ readr::read_csv(system.file("metadata-tables/biblio.csv", package = "dataspice")
 ```{r, echo=FALSE, message=FALSE}
 readr::read_csv(system.file("metadata-tables/creators.csv", package = "dataspice")) %>% kable() 
 ```
-
 
 ### Save json-ld file
 
