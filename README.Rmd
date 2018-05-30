@@ -22,13 +22,13 @@ library(stringr)
 
 [![Build Status](https://travis-ci.com/ropenscilabs/dataspice.svg?branch=master)](https://travis-ci.com/ropenscilabs/dataspice)
 
-The goal of dataspice is to make it easier for researchers to create basic, lightweight and concise metadata files for their datasets. These basic files can then be used to:
+`dataspice` makes it easier for you to get started documenting your data so other people can find and re-use it. This documentation (metadata) can also be used to:
 
-- make useful information available during analysis.
-- create a helpful dataset README webpage.
-- produce more complex metadata formats to aid dataset discovery.
+- Create a website for your data (like [pkgdown](https://github.com/r-lib/pkgdown) for your data) that you can easily host on [GitHub Pages](https://pages.github.com/) or elsewhere
+- Easily transition to a richer metadata standard to document your data even further
+- Integrate with Google's [public datataset initiative](https://ai.googleblog.com/2017/01/facilitating-discovery-of-public.html) by automatically marking your website up with [Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data)
 
-Metadata fields are based on [schema.org](http://schema.org/Dataset) and other [metadata standards](https://github.com/ropenscilabs/dataspice#resources).
+The metadata `dataspice` helps you collect is based on [Schema.org/Dataset](http://schema.org/Dataset) with an eye towards exporting to richer [metadata standards](https://github.com/ropenscilabs/dataspice#resources).
 
 ## Example
 
@@ -36,11 +36,11 @@ A fully worked example can be found [here](https://github.com/amoeba/dataspice-e
 
 ## Installation
 
-You can install the development version from [GitHub](https://github.com/) with:
+You can install the development version from [GitHub](https://github.com/ropenscilabs/dataspice) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("ropenscilabs/dataspice")
+# install.packages("remotes")
+remotes::install_github("ropenscilabs/dataspice")
 ```
 ## Workflow
 
